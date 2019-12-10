@@ -5,7 +5,33 @@ import java.util.TreeSet;
 
 public class BookWithChapters {
 
-    String name, author;
+    String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public List<Chapter> getListOfChapter() {
+        return listOfChapter;
+    }
+
+    public void setListOfChapter(List<Chapter> listOfChapter) {
+        this.listOfChapter = listOfChapter;
+    }
+
+    String author;
     List<Chapter> listOfChapter;
     public BookWithChapters(String name, String author) {
         if ((name == null || name=="")||(author == null || author==""))

@@ -1,6 +1,10 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+
 
 public class BookWithChaptersTest {
 
@@ -58,8 +62,11 @@ public class BookWithChaptersTest {
     public void addsMultipleChaptersToTheBookSuccessfully() {
         //arrange
         BookWithChapters myBook=new BookWithChapters("TCI","Erik");
+        //act
         myBook.addChapterToTheBook("mychapter","1.1");
         myBook.addChapterToTheBook("mychapter2","2.1");
+        //assert
+        assertEquals(2,myBook.listOfChapter.size());
 
     }
     @Test(expected = IllegalArgumentException.class)
