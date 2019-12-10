@@ -45,14 +45,14 @@ public class BookWithChaptersTest {
         BookWithChapters myBook=new BookWithChapters("TCI","Erik");
         myBook.addChapterToTheBook("mychapter","1.1");
         //assert
-        Assert.assertNotNull(any());
+        Assert.assertNotNull(myBook.getSetOfSortedChapters());
     }
     @Test(expected = IllegalArgumentException.class)
     public void shouldThrowExceptionForIncorrectFormatOfChapterNumber() {
         //arrange
         BookWithChapters myBook=new BookWithChapters("TCI","Erik");
         //act
-        myBook.addChapterToTheBook("mychapter","1");
+        myBook.addChapterToTheBook("mychapter","x");
     }
     @Test
     public void addsMultipleChaptersToTheBookSuccessfully() {
