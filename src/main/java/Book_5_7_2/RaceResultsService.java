@@ -47,6 +47,9 @@ public class RaceResultsService {
                 break;
             }
         }
-
+        if (!isSubscribed)
+        {
+            throw new IllegalArgumentException("Client was never a subscriber !");
+        }
     }
 }
