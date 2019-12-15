@@ -3,6 +3,18 @@ package w3;
 import java.time.LocalDate;
 
 public class Course {
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public LocalDate getStartDate() {
+        return startDate;
+    }
+
+    public LocalDate getEndDate() {
+        return endDate;
+    }
+
     private final String courseName;
     private final LocalDate startDate, endDate;
 
