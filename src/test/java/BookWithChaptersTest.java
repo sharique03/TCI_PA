@@ -16,6 +16,16 @@ public class BookWithChaptersTest {
         //assert
         Assert.assertNotNull(myBook1);
     }
+    @Test
+    public void checkChapterCompareToaddChapterToTheBook(){
+        //arrange
+        BookWithChapters myBook=new BookWithChapters("TCI","Erik");
+        //act
+        myBook.addChapterToTheBook("mychapter3","3.1");
+        myBook.addChapterToTheBook("mychapter2","2.1");
+        //assert
+        assertEquals(-1,myBook.listOfChapter.get(1).compareTo(myBook.listOfChapter.get(0)));
+    }
     @Test(expected = IllegalArgumentException.class)
     public void shouldThrowExceptionWhenWhenBookNameIsNullOrEmpty() {
         //arrange

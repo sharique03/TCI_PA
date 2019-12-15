@@ -1,6 +1,16 @@
 
 public class Chapter implements Comparable<Chapter> {
-    String chapterName,chapterNumber;
+    String chapterName;
+
+    public String getChapterName() {
+        return chapterName;
+    }
+
+    public String getChapterNumber() {
+        return chapterNumber;
+    }
+
+    String chapterNumber;
 
     public Chapter(String chapterName, String chapterNumber) {
         if (chapterName == null || !chapterNumber.matches("^\\d+(\\.\\d+)?$"))
@@ -34,6 +44,11 @@ public class Chapter implements Comparable<Chapter> {
 
     @Override
     public int compareTo(Chapter chapter) {
-        return this.chapterNumber.compareTo(chapter.chapterNumber);
+        //System.out.println("testing comapre to: "+this.chapterNumber.compareTo(chapter.chapterNumber));
+        //return this.chapterNumber.compareTo(chapter.chapterNumber);
+        if (Double.valueOf(this.chapterNumber) < Double.valueOf(chapter.chapterNumber)) return -1;
+        else if (Double.valueOf(this.chapterNumber) > Double.valueOf(chapter.chapterNumber)) return 1;
+        else return 0;
+
     }
 }
