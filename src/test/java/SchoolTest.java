@@ -4,10 +4,13 @@ import org.junit.runner.RunWith;
 import junitparams.JUnitParamsRunner;
 import w3.Course;
 import w3.CourseDateException;
+import w3.School;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 @RunWith(JUnitParamsRunner.class) // needed for parametrized tests
 public class SchoolTest {
