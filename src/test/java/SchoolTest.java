@@ -1,12 +1,14 @@
 import org.junit.Test;
 import org.junit.Assert;
+import w3.Course;
+import w3.CourseDateException;
 
 import java.time.LocalDate;
 
 public class SchoolTest {
 
     @Test
-    public void addCourseEndDateAfterStartDate(){
+    public void addCourseEndDateAfterStartDate() throws CourseDateException {
         //arrange
         final LocalDate startDate = LocalDate.parse("2019-03-31");
         final LocalDate endDate = LocalDate.parse("2019-04-05");
