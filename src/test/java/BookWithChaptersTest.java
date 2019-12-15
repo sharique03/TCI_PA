@@ -17,7 +17,7 @@ public class BookWithChaptersTest {
         Assert.assertNotNull(myBook1);
     }
     @Test
-    public void checkChapterCompareToaddChapterToTheBook(){
+    public void checkChapterCompareToMethod(){
         //arrange
         BookWithChapters myBook=new BookWithChapters("TCI","Erik");
         //act
