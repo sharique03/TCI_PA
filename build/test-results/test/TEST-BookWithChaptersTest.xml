@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BookWithChaptersTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-01-23T08:30:46" hostname="DESKTOP-HCRQ2JE" time="0.045">
+  <properties/>
+  <testcase name="checkChapterCompareToMethod" classname="BookWithChaptersTest" time="0.011"/>
+  <testcase name="shouldThrowExceptionWhenWhenBookNameAndAuthorAreEmpty" classname="BookWithChaptersTest" time="0.0"/>
+  <testcase name="createsABookSuccessfully" classname="BookWithChaptersTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionWhenWhenBookNameAndAuthorAreNull" classname="BookWithChaptersTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionForIncorrectFormatOfChapterNumber" classname="BookWithChaptersTest" time="0.0"/>
+  <testcase name="addsMultipleChaptersToTheBookSuccessfully" classname="BookWithChaptersTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionWhenSameChaptersAreAddedInABook" classname="BookWithChaptersTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionWhenWhenBookAuthorIsNullOrEmpty" classname="BookWithChaptersTest" time="0.001"/>
+  <testcase name="shouldThrowExceptionWhenWhenBookNameIsNullOrEmpty" classname="BookWithChaptersTest" time="0.0"/>
+  <testcase name="addsAChapterToTheBookSuccessfully" classname="BookWithChaptersTest" time="0.022"/>
+  <testcase name="checkIfChaptersAreSorted" classname="BookWithChaptersTest" time="0.006"/>
+  <system-out><![CDATA[mychapter1.1
+mychapter11.1
+mychapter22.1
+mychapter33.1
+mychapter11.1
+mychapter22.1
+mychapter33.1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

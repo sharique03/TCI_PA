@@ -8,11 +8,18 @@ public class School {
     private LocalDate opennningDate;
     private List<Course>courseList;
 
+    /**
+     *
+     * @param schoolName
+     * @param openningDate
+     * @param courseList
+     */
     public School(String schoolName, LocalDate openningDate, List<Course> courseList) {
         this.schoolName=schoolName;
         this.opennningDate=openningDate;
         this.courseList=courseList;
     }
+
 
     public LocalDate getOpenningDate() {
         return this.opennningDate;
